@@ -1,0 +1,60 @@
+# Build directories
+build/
+builddir/
+_build/
+
+# Compiled files
+*.o
+*.so
+*.la
+*.lo
+*.a
+
+# Meson build files
+meson-private/
+meson-logs/
+meson-info/
+.ninja_deps
+.ninja_log
+build.ninja
+
+# Package files
+*.pkg.tar.xz
+*.pkg.tar.zst
+*.pkg.tar.gz
+*.pkg.tar
+*.sig
+pkg/
+# Note: src/ is NOT ignored as it contains source code
+
+# Editor temporary files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Cache directories
+.cache/
+
+# Development files
+compile_commands.json
+.clangd/
+.ccls-cache/

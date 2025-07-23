@@ -1,0 +1,10 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Encoding=UTF-8
+Name=AxisClock
+Comment=A macOS-style clock for the Xfce panel
+Icon=xfce4-axisclock-plugin
+X-XFCE-Module=axisclock
+X-XFCE-Internal=false
+X-XFCE-Unique=false
+X-XFCE-API=2.0

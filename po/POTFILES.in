@@ -1,0 +1,6 @@
+# List of source files containing translatable strings
+src/main.c
+src/clock_widget.c
+src/time_formatter.c
+src/plugin_config.c
+data/xfce4-macclock-plugin.desktop.in
