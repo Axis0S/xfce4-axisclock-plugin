@@ -53,7 +53,7 @@ cd xfce4-axisclock-plugin
 
 2. Build and install:
 ```bash
-sudo ./install.sh
+./install.sh
 ```
 
 3. Restart the Xfce panel:
