@@ -53,10 +53,7 @@ cd xfce4-axisclock-plugin
 
 2. Build and install:
 ```bash
-meson setup build
-cd build
-meson compile
-sudo meson install
+sudo ./install.sh
 ```
 
 3. Restart the Xfce panel:
@@ -113,7 +110,7 @@ The plugin automatically detects your system theme. If colors aren't applied cor
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit pull requests or report issues on the [GitHub repository](https://github.com/AxisOS/xfce4-axisclock-plugin).
+Contributions are welcome! Please feel free to submit pull requests or report issues on the [GitHub repository](https://github.com/Axis0S/xfce4-axisclock-plugin).
 
 ## Copyright
 
