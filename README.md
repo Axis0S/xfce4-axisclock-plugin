@@ -43,6 +43,110 @@ AxisClock is a lightweight clock plugin for the Xfce desktop environment that br
 
 ## Installation
 
+### Pre-built Packages
+
+Ready-to-install packages are available in the [Releases](https://github.com/AxisOS/xfce4-axisclock-plugin/releases) section for the following distributions:
+
+#### Debian/Ubuntu
+```bash
+# Download the .deb package from releases
+wget https://github.com/AxisOS/xfce4-axisclock-plugin/releases/download/v0.1/xfce4-axisclock-plugin_0.1_amd64.deb
+
+# Install the package
+sudo dpkg -i xfce4-axisclock-plugin_0.1_amd64.deb
+
+# Install any missing dependencies
+sudo apt-get install -f
+```
+
+#### Fedora/RHEL
+```bash
+# Download the .rpm package from releases
+wget https://github.com/AxisOS/xfce4-axisclock-plugin/releases/download/v0.1/xfce4-axisclock-plugin-0.1-1.fc42.x86_64.rpm
+
+# Install the package
+sudo dnf install xfce4-axisclock-plugin-0.1-1.fc42.x86_64.rpm
+```
+
+#### Arch Linux
+```bash
+# Download the package from releases
+wget https://github.com/AxisOS/xfce4-axisclock-plugin/releases/download/v0.1/xfce4-axisclock-plugin-0.1-1-x86_64.pkg.tar.zst
+
+# Install the package
+sudo pacman -U xfce4-axisclock-plugin-0.1-1-x86_64.pkg.tar.zst
+```
+
+All packages are signed with my GPG key. See the Package Signing section below for verification instructions.
+
+### Package Signing
+
+All packages are signed with my GPG key for security verification.
+
+**GPG Key ID:** `62F091E70A090877`  
+**Fingerprint:** `A192 9394 DC6B C602 A765 4955 62F0 91E7 0A09 0877`
+
+#### Downloading the GPG Key
+
+You can download my GPG key from the Ubuntu keyserver:
+
+```bash
+# Download the key
+gpg --keyserver keyserver.ubuntu.com --recv-keys 62F091E70A090877
+
+# Or using the full fingerprint (recommended)
+gpg --keyserver keyserver.ubuntu.com --recv-keys A1929394DC6BC602A765495562F091E70A090877
+```
+
+#### Adding the GPG Key to Your System
+
+**Debian/Ubuntu:**
+```bash
+# Export the key and add it to apt's keyring
+gpg --armor --export 62F091E70A090877 | sudo tee /etc/apt/trusted.gpg.d/axisos.asc
+
+# For newer systems using signed-by (recommended)
+sudo mkdir -p /etc/apt/keyrings
+gpg --armor --export 62F091E70A090877 | sudo tee /etc/apt/keyrings/axisos.gpg
+```
+
+**Fedora/RHEL:**
+```bash
+# Export and import the key to RPM database
+gpg --armor --export 62F091E70A090877 > axisos.asc
+sudo rpm --import axisos.asc
+rm axisos.asc
+```
+
+**Arch Linux:**
+```bash
+# Add the key to pacman's keyring
+sudo pacman-key --recv-keys 62F091E70A090877
+sudo pacman-key --lsign-key 62F091E70A090877
+
+# Or using the full fingerprint
+sudo pacman-key --recv-keys A1929394DC6BC602A765495562F091E70A090877
+sudo pacman-key --lsign-key A1929394DC6BC602A765495562F091E70A090877
+```
+
+#### Verifying Package Signatures
+
+After adding the key, you can verify downloaded packages:
+
+```bash
+# For .deb packages
+dpkg-sig --verify package.deb
+
+# For .rpm packages
+rpm --checksig package.rpm
+
+# For Arch packages
+pacman-key --verify package.pkg.tar.zst.sig
+
+# For source tarballs
+gpg --verify package.tar.gz.asc package.tar.gz
+```
+
 ### From Source
 
 1. Clone the repository:
