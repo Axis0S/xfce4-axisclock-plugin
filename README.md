@@ -18,7 +18,7 @@ AxisClock is a lightweight clock plugin for the Xfce desktop environment that br
 **Author:** Kamil 'Novik' Nowicki  
 **Email:** novik@axisos.org  
 **Website:** https://axisos.org  
-**Repository:** https://github.com/AxisOS/xfce4-axisclock-plugin  
+**Repository:** https://github.com/Axis0S/xfce4-axisclock-plugin  
 **Version:** 0.1  
 **License:** GPL-2.0+  
 
@@ -45,12 +45,12 @@ AxisClock is a lightweight clock plugin for the Xfce desktop environment that br
 
 ### Pre-built Packages
 
-Ready-to-install packages are available in the [Releases](https://github.com/AxisOS/xfce4-axisclock-plugin/releases) section for the following distributions:
+Ready-to-install packages are available in the [Releases](https://github.com/Axis0S/xfce4-axisclock-plugin/releases) section for the following distributions:
 
 #### Debian/Ubuntu
 ```bash
 # Download the .deb package from releases
-wget https://github.com/AxisOS/xfce4-axisclock-plugin/releases/download/v0.1/xfce4-axisclock-plugin_0.1_amd64.deb
+wget https://github.com/Axis0S/xfce4-axisclock-plugin/releases/download/v0.1/xfce4-axisclock-plugin_0.1_amd64.deb
 
 # Install the package
 sudo dpkg -i xfce4-axisclock-plugin_0.1_amd64.deb
@@ -62,7 +62,7 @@ sudo apt-get install -f
 #### Fedora/RHEL
 ```bash
 # Download the .rpm package from releases
-wget https://github.com/AxisOS/xfce4-axisclock-plugin/releases/download/v0.1/xfce4-axisclock-plugin-0.1-1.fc42.x86_64.rpm
+wget https://github.com/Axis0S/xfce4-axisclock-plugin/releases/download/v0.1/xfce4-axisclock-plugin-0.1-1.fc42.x86_64.rpm
 
 # Install the package
 sudo dnf install xfce4-axisclock-plugin-0.1-1.fc42.x86_64.rpm
@@ -71,7 +71,7 @@ sudo dnf install xfce4-axisclock-plugin-0.1-1.fc42.x86_64.rpm
 #### Arch Linux
 ```bash
 # Download the package from releases
-wget https://github.com/AxisOS/xfce4-axisclock-plugin/releases/download/v0.1/xfce4-axisclock-plugin-0.1-1-x86_64.pkg.tar.zst
+wget https://github.com/Axis0S/xfce4-axisclock-plugin/releases/download/v0.1/xfce4-axisclock-plugin-0.1-1-x86_64.pkg.tar.zst
 
 # Install the package
 sudo pacman -U xfce4-axisclock-plugin-0.1-1-x86_64.pkg.tar.zst
@@ -151,7 +151,7 @@ gpg --verify package.tar.gz.asc package.tar.gz
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/AxisOS/xfce4-axisclock-plugin.git
+git clone https://github.com/Axis0S/xfce4-axisclock-plugin.git
 cd xfce4-axisclock-plugin
 ```
 
